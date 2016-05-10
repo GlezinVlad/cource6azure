@@ -20,8 +20,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'cource6db',
-        'USER': 'ba8b3e450e96f9',
-        'PASSWORD': '8dff9980',
+        'USER': 'b3261d3c82adde',
+        'PASSWORD': 'afde9d04',
         'HOST': 'eu-cdbr-azure-north-e.cloudapp.net',
         'PORT': '3306',
     }

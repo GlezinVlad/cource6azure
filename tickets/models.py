@@ -9,7 +9,7 @@ class Ticket(models.Model):
     seance = models.ForeignKey(Seance, on_delete=models.CASCADE, related_name='tickets')
     row = models.IntegerField()
     place = models.IntegerField()
-    user_id = models.IntegerField()
+    user_email = models.EmailField()
 
     def __unicode__(self):
         return 'Ticket(seance: {0}, row: {1}, place: {2})'.format(self.seance, self.row, self.place)

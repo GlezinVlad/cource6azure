@@ -9,4 +9,4 @@ class SeanceSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Seance
-        fields = ('id', 'movie', 'starts_at', 'duration', 'tickets')
+        fields = ('id', 'movie', 'starts_at', 'price', 'tickets')
