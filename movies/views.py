@@ -7,9 +7,15 @@ from models import Movie
 
 
 class MovieListView(generics.ListCreateAPIView):
-    queryset = Movie.objects.all()
     serializer_class = MovieSerializer
-    filter_fields = ('title',)
+
+    def get_queryset(self):
+        title_filter = self.request.query_params.get('title')
+        if title_filter:
+            a = Movie.objects.filter(title__icontains=title_filter)
+            return a
+        else:
+            return Movie.objects.all()
 
 
 class MovieDetailView(generics.RetrieveUpdateDestroyAPIView):

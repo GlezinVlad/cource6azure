@@ -14,7 +14,8 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
-
+rows = 10
+places = 10
 
 DATABASES = {
     'default': {
