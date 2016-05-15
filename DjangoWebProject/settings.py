@@ -6,7 +6,7 @@ TEMPLATE_DEBUG = DEBUG
 
 ALLOWED_HOSTS = (
     'localhost',
-    'http://cource6.azurewebsites.net/',
+    'cource6.azurewebsites.net',
 )
 
 ADMINS = (
