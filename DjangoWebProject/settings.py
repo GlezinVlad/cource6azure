@@ -67,6 +67,7 @@ TEMPLATE_LOADERS = (
 )
 
 MIDDLEWARE_CLASSES = (
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -96,8 +97,10 @@ INSTALLED_APPS = (
     'reports',
     'rest_framework',
     'crispy_forms',
+    'corsheaders',
 )
 
+CORS_ORIGIN_ALLOW_ALL = True
 
 REST_FRAMEWORK = {
     'DEFAULT_FILTER_BACKENDS': ('rest_framework.filters.DjangoFilterBackend',)
