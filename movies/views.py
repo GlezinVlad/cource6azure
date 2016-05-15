@@ -12,8 +12,7 @@ class MovieListView(generics.ListCreateAPIView):
     def get_queryset(self):
         title_filter = self.request.query_params.get('title')
         if title_filter:
-            a = Movie.objects.filter(title__icontains=title_filter)
-            return a
+            return Movie.objects.filter(title__icontains=title_filter)
         else:
             return Movie.objects.all()
 

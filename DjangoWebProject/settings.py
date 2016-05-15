@@ -1,7 +1,7 @@
 from os import path
 PROJECT_ROOT = path.dirname(path.abspath(path.dirname(__file__)))
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 ALLOWED_HOSTS = (
@@ -14,8 +14,6 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
-rows = 10
-places = 10
 
 DATABASES = {
     'default': {
@@ -94,6 +92,7 @@ INSTALLED_APPS = (
     'movies',
     'seances',
     'tickets',
+    'reports',
     'rest_framework',
     'crispy_forms',
 )

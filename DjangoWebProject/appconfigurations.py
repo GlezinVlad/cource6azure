@@ -1,0 +1,2 @@
+ROWS = 10
+PLACES = 10

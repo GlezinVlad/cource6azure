@@ -8,5 +8,6 @@ urlpatterns = [
     url(r'^movies/', include('movies.urls')),
     url(r'^seances/', include('seances.urls')),
     url(r'^tickets/', include('tickets.urls')),
+    url(r'^reports/', include('reports.urls')),
 ]
 
